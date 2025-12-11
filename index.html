@@ -1,156 +1,61 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warkop BosQu - Lenteng Agung 24 Jam</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        coffee: '#4b3621',
-                        gold: '#fbbf24',
-                        cream: '#fef3c7',
-                    },
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        /* Smooth Scrolling */
-        html { scroll-behavior: smooth; }
-    </style>
+    <title>Parks of South Jakarta | Explore Green Spaces</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 font-sans text-gray-800">
 
-    <nav class="fixed w-full bg-white/95 backdrop-blur shadow-md z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-coffee">Warkop <span class="text-yellow-600">BosQu</span></a>
-            <div class="hidden md:flex space-x-8 text-sm font-semibold">
-                <a href="#about" class="hover:text-yellow-600 transition">Tentang</a>
-                <a href="#menu" class="hover:text-yellow-600 transition">Menu & Harga</a>
-                <a href="#location" class="hover:text-yellow-600 transition">Lokasi</a>
-            </div>
-            <a href="https://wa.me/62881011110076?text=Halo%20Warkop%20BosQu,%20mau%20tanya%20menu%20dong" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full font-bold transition shadow-lg flex items-center gap-2">
-                <span>WhatsApp</span>
-            </a>
+<body>
+
+    <header class="hero">
+        <div class="hero-bg">
+            <img src="assets/main_hero.png" alt="South Jakarta Skyline">
         </div>
-    </nav>
-
-    <header class="relative bg-coffee h-screen min-h-[500px] flex items-center justify-center text-center px-6">
-        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1637&auto=format&fit=crop')] bg-cover bg-center opacity-40"></div>
-        
-        <div class="relative z-10 max-w-3xl">
-            <span class="bg-yellow-500 text-coffee font-bold px-4 py-1 rounded-full text-sm mb-4 inline-block">BUKA 24 JAM NON-STOP</span>
-            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-                Nongkrong Asik, Harga Mahasiswa di <span class="text-yellow-400">Lenteng Agung</span>
-            </h1>
-            <p class="text-gray-200 text-lg mb-8">
-                Mulai dari Rp 1.000 - Rp 25.000. Makan kenyang, ngopi tenang, Wi-Fi kencang.
-            </p>
-            <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="#location" class="bg-yellow-500 text-coffee font-bold py-3 px-8 rounded-lg hover:bg-yellow-400 transition shadow-lg">
-                    Arahkan Maps 📍
-                </a>
-                <a href="https://wa.me/62881011110076" class="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-coffee transition">
-                    Hubungi Kami
-                </a>
-            </div>
+        <div class="hero-content">
+            <h1>Parks of South Jakarta</h1>
+            <p>Discover the best green spaces for you and your family.</p>
         </div>
     </header>
 
-    <section class="bg-white py-10 shadow-sm relative -mt-10 mx-4 md:mx-20 rounded-xl z-20">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-200 text-center">
-            <div class="p-4">
-                <p class="text-4xl font-bold text-yellow-500">5.0 ⭐</p>
-                <p class="text-gray-600 text-sm mt-1">Rating Sempurna dari 36 Review</p>
-            </div>
-            <div class="p-4">
-                <p class="text-4xl font-bold text-coffee">24 Jam</p>
-                <p class="text-gray-600 text-sm mt-1">Buka Setiap Hari</p>
-            </div>
-            <div class="p-4">
-                <p class="text-4xl font-bold text-green-600">Ramah</p>
-                <p class="text-gray-600 text-sm mt-1">Kantong Mahasiswa (Mulai 1rb)</p>
-            </div>
-        </div>
-    </section>
+    <main class="directory">
+        <div class="card-grid">
+            <!-- Como Park Card -->
+            <a href="./como-park/index.html" class="card">
+                <div class="card-image">
+                    <img src="./como-park/assets/hero.png" alt="Como Park">
+                </div>
+                <div class="card-content">
+                    <h2>Como Park</h2>
+                    <div class="rating">★ 4.6 (2,081 Reviews)</div>
+                    <p>Enclosed pet playground for off-leash play, with a pizzeria, coffee shop & gelateria for owners.
+                        A community favorite in Kemang.</p>
+                    <span class="btn-link">Visit Website &rarr;</span>
+                </div>
+            </a>
 
-    <section id="menu" class="py-20 bg-cream">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-coffee mb-2">Menu Favorit BosQu</h2>
-                <p class="text-gray-600">Rasa bintang lima, harga kaki lima.</p>
-            </div>
+            <!-- Pejatian Park Card -->
+            <a href="./pejatian-park/index.html" class="card">
+                <div class="card-image">
+                    <img src="./pejatian-park/assets/hero.png" alt="Pejatian Park">
+                </div>
+                <div class="card-content">
+                    <h2>Pejatian Park</h2>
+                    <div class="rating">★ 4.7 (350 Reviews)</div>
+                    <p>A serene urban oasis in West Pejaten. Perfect for jogging, morning walks, and finding peace
+                        amidst the city bustle.</p>
+                    <span class="btn-link">Visit Website &rarr;</span>
+                </div>
+            </a>
+        </div>
+    </main>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
-                    <div class="h-48 bg-gray-200 bg-[url('https://images.unsplash.com/photo-1621221769733-407133748c08?q=80&w=1470&auto=format&fit=crop')] bg-cover bg-center"></div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Aneka Indomie Kekinian</h3>
-                        <p class="text-gray-600 text-sm mb-4">Indomie Telur Kornet, Indomie Nyemek, pedas mampus atau original.</p>
-                        <span class="text-green-600 font-bold">Mulai Rp 6.000</span>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
-                    <div class="h-48 bg-gray-200 bg-[url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1374&auto=format&fit=crop')] bg-cover bg-center"></div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Kopi & Minuman Segar</h3>
-                        <p class="text-gray-600 text-sm mb-4">Kopi Hitam, Kopi Susu, Es Teh Manis, Nutrisari, hingga Soda Gembira.</p>
-                        <span class="text-green-600 font-bold">Mulai Rp 3.000</span>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
-                    <div class="h-48 bg-gray-200 bg-[url('https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=1374&auto=format&fit=crop')] bg-cover bg-center"></div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Roti Bakar & Gorengan</h3>
-                        <p class="text-gray-600 text-sm mb-4">Teman nongkrong paling pas. Roti bakar coklat keju atau gorengan panas.</p>
-                        <span class="text-green-600 font-bold">Mulai Rp 1.000</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="location" class="bg-coffee text-white py-16">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row gap-12 items-center">
-            <div class="md:w-1/2">
-                <h2 class="text-3xl font-bold mb-6">Mampir ke Warkop BosQu!</h2>
-                <div class="space-y-4">
-                    <div class="flex items-start gap-4">
-                        <span class="text-2xl">📍</span>
-                        <p>Jl. Raya Lenteng Agung No.11C, RT.4/RW.1, Lenteng Agung, Kec. Jagakarsa, Kota Jakarta Selatan, 12630</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <span class="text-2xl">🕒</span>
-                        <p>Buka 24 Jam Setiap Hari</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <span class="text-2xl">📞</span>
-                        <p><a href="https://wa.me/62881011110076" class="hover:text-yellow-400">0881-0111-10076</a></p>
-                    </div>
-                </div>
-                <div class="mt-8">
-                     <a href="https://www.google.com/maps/search/?api=1&query=Warkop+BosQu+Lenteng+Agung" target="_blank" class="inline-block bg-yellow-500 text-coffee font-bold px-6 py-3 rounded hover:bg-yellow-400 transition">
-                        Buka di Google Maps
-                    </a>
-                </div>
-            </div>
-            <div class="md:w-1/2 w-full h-64 md:h-80 bg-gray-300 rounded-lg overflow-hidden shadow-2xl">
-                <iframe src="https://www.google.com/maps?q=Warkop+BosQu+Lenteng+Agung&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-        
-        <div class="text-center mt-16 pt-8 border-t border-gray-700 text-gray-400 text-sm">
-            &copy; 2025 Warkop BosQu. Created by Professional Web Dev.
-        </div>
-    </section>
+    <footer>
+        <p>&copy; 2025 South Jakarta Parks Directory.</p>
+    </footer>
 
 </body>
+
 </html>
