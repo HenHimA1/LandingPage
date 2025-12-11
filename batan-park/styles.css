@@ -1,5 +1,6 @@
 :root {
-    --primary: #64B5F6;
+    --primary: #1976D2;
+    /* Darker Blue */
     /* Calming Blue */
     --secondary: #81C784;
     /* Soft Green */
@@ -123,7 +124,7 @@ header {
     margin-top: 20px;
     font-weight: 700;
     background: white;
-    color: var(--text);
+    color: #1a2327;
     display: inline-flex;
     padding: 10px 20px;
     border-radius: 50px;
