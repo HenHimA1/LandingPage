@@ -173,3 +173,30 @@ footer {
     padding: 40px;
     color: #555;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .about-region {
+        padding: 30px 20px;
+    }
+
+    .about-region h2 {
+        font-size: 2rem;
+    }
+
+    .directory {
+        margin-top: -50px;
+    }
+
+    .card-grid {
+        gap: 20px;
+    }
+}
