@@ -1,0 +1,263 @@
+:root {
+    --primary: #FF5722;
+    /* Playful Orange */
+    --secondary: #FFC107;
+    /* Bright Yellow */
+    --accent: #4CAF50;
+    /* Green */
+    --blue: #2196F3;
+    --text: #333;
+    --bg: #FFF3E0;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: var(--text);
+    background-color: var(--bg);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Fredoka', sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    background: var(--white);
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.btn-visit {
+    background: var(--blue);
+    color: white !important;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: transform 0.2s;
+}
+
+.btn-visit:hover {
+    transform: scale(1.05);
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    overflow: hidden;
+}
+
+.hero-image img {
+    border-radius: 20px;
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+    margin-top: -50px;
+    position: relative;
+    background: white;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.info-badges {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.badge {
+    background: var(--accent);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.badge:nth-child(2) {
+    background: var(--blue);
+}
+
+.badge:nth-child(3) {
+    background: var(--secondary);
+    color: var(--text);
+}
+
+/* Facilities */
+.facilities {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    border: 2px solid transparent;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: var(--secondary);
+}
+
+.card .icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: var(--blue);
+}
+
+/* Activities */
+.activities {
+    background: white;
+    padding: 80px 0;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.img-col img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 15px 15px 0 var(--secondary);
+}
+
+.check-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.check-list li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Location */
+.location {
+    padding: 80px 0;
+}
+
+.map-box {
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.map-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.map-info h3 {
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .flex-row {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
